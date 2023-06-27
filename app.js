@@ -96,10 +96,10 @@ window.addEventListener('load', () => {
   degreeSection.addEventListener("click", () => {
     if (degreeSpan.textContent === 'F') {
       degreeSpan.textContent = "C";
-      degree.textContent = (degree.textContent-32)*5/9;
+      degree.textContent = ((degree.textContent-32)*5/9).toFixed(2);
     } else {
       degreeSpan.textContent = "F";
-      degree.textContent = degree.textContent*9/5+32;
+      degree.textContent = (degree.textContent*9/5+32).toFixed(2);
     };
   });
 
